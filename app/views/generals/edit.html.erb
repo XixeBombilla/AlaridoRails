@@ -10,7 +10,7 @@
           <h1 style=" color:#ffff00; ">Editar Datos</h1>
 
 
-<% form_for(@general) do |f| %>
+<% form_for(@general, :html => { :multipart => true }) do |f| %>
 <%= f.error_messages :header_message => "Por favor intente nuevamente", :message => "Existen los siguientes errores en los campos de:" %>
 
 <%= render :partial => "form", :locals => {:f => f}  %>

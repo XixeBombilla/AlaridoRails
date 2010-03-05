@@ -6014,3 +6014,498 @@ Processing GeneralsController#create (for 127.0.0.1 at 2010-03-05 11:24:05) [POS
 Rendering template within layouts/generals
 Rendering generals/new
 Completed in 43ms (View: 23, DB: 0) | 200 OK [http://localhost/generals]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 11:28:00) [GET]
+  Parameters: {"title"=>"Noticias sobre el mundo del mercado forex de Amero-fx"}
+
+ActionController::RoutingError (No route matches "/noticias/feed" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePublicos (20100304184349)
+Migrating to CreateGenerals (20100304193401)
+Migrating to CreateEstudiantes (20100304222224)
+Migrating to CreateUsers (20100305002410)
+Migrating to AddDefaultUser (20100305161904)
+Migrating to AddEmailToEstudiantes (20100305162503)
+Migrating to AddAttachmentsPhotoToGeneral (20100305172827)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mALTER TABLE "generals" ADD "photo_file_name" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "generals" ADD "photo_content_type" varchar(255)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "generals" ADD "photo_file_size" integer[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "generals" ADD "photo_updated_at" datetime[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100305172827')[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("estudiantes")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("generals")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("logs")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("publicos")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_info('index_users_on_login')[0m
+
+
+Processing PublicosController#index (for 127.0.0.1 at 2010-03-05 11:31:16) [GET]
+  [4;36;1mPublico Load (0.6ms)[0m   [0;1mSELECT * FROM "publicos" [0m
+Rendering template within layouts/publicos
+Rendering publicos/index
+Completed in 157ms (View: 143, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:31:21) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x102d6a3f0>) on line #14 of app/views/generals/new.html.erb:
+11:           
+12: 		<% form_for :general, :html => { :multipart => true } do |form| %>
+13: 
+14: 		<%= f.error_messages :header_message => "Por favor intente nuevamente", :message => "Existen los siguientes errores en los campos de:", :style => "color:white" %>
+15:           
+16:             <p style="color:white;">
+17:               <%= f.label :Nombre_Empresa %><br />
+
+    app/views/generals/new.html.erb:14
+    app/views/generals/new.html.erb:12
+    app/controllers/generals_controller.rb:31:in `new'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (189.0ms)
+Rendered rescues/_request_and_response (2.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:31:37) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 47ms (View: 30, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:31:41) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:32:16) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 167ms (View: 149, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing PublicosController#index (for 127.0.0.1 at 2010-03-05 11:32:24) [GET]
+  [4;36;1mPublico Load (0.5ms)[0m   [0;1mSELECT * FROM "publicos" [0m
+Rendering template within layouts/publicos
+Rendering publicos/index
+Completed in 49ms (View: 36, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 11:32:59) [GET]
+  Parameters: {"title"=>"Noticias sobre el mundo del mercado forex de Amero-fx"}
+
+ActionController::RoutingError (No route matches "/noticias/feed" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePublicos (20100304184349)
+Migrating to CreateGenerals (20100304193401)
+Migrating to CreateEstudiantes (20100304222224)
+Migrating to CreateUsers (20100305002410)
+Migrating to AddDefaultUser (20100305161904)
+Migrating to AddEmailToEstudiantes (20100305162503)
+Migrating to AddAttachmentsPhotoToGeneral (20100305172827)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("estudiantes")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("generals")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("logs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("publicos")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_info('index_users_on_login')[0m
+
+
+Processing PublicosController#index (for 127.0.0.1 at 2010-03-05 11:51:08) [GET]
+  [4;36;1mPublico Load (0.7ms)[0m   [0;1mSELECT * FROM "publicos" [0m
+Rendering template within layouts/publicos
+Rendering publicos/index
+Completed in 166ms (View: 152, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:51:12) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 61ms (View: 43, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:51:47) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:51:49) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:53:14) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 34ms (View: 16, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing PublicosController#index (for 127.0.0.1 at 2010-03-05 11:53:50) [GET]
+  [4;36;1mPublico Load (0.7ms)[0m   [0;1mSELECT * FROM "publicos" [0m
+Rendering template within layouts/publicos
+Rendering publicos/index
+Completed in 179ms (View: 165, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 11:53:51) [GET]
+  Parameters: {"title"=>"Noticias sobre el mundo del mercado forex de Amero-fx"}
+
+ActionController::RoutingError (No route matches "/noticias/feed" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:55:01) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 59ms (View: 41, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#img to png (for 127.0.0.1 at 2010-03-05 11:55:02) [GET]
+  Parameters: {"id"=>"favico"}
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (View: 1, DB: 0) | 406 Not Acceptable [http://localhost/generals/img/favico.png]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:55:03) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"06ZuxfE0JMm0C1yN9sz/BLrWw+YofScubxr6I5popvk=", "general"=>{"logotipo"=>"", "nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 34ms (View: 16, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:55:05) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"06ZuxfE0JMm0C1yN9sz/BLrWw+YofScubxr6I5popvk=", "general"=>{"logotipo"=>"", "nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 131ms (View: 16, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:55:07) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"06ZuxfE0JMm0C1yN9sz/BLrWw+YofScubxr6I5popvk=", "general"=>{"logotipo"=>"", "nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 35ms (View: 16, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:55:11) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"06ZuxfE0JMm0C1yN9sz/BLrWw+YofScubxr6I5popvk=", "general"=>{"logotipo"=>"", "nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 34ms (View: 16, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#img to png (for 127.0.0.1 at 2010-03-05 11:55:11) [GET]
+  Parameters: {"id"=>"favico"}
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (View: 1, DB: 0) | 406 Not Acceptable [http://localhost/generals/img/favico.png]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:55:22) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"06ZuxfE0JMm0C1yN9sz/BLrWw+YofScubxr6I5popvk=", "general"=>{"logotipo"=>"", "nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 128ms (View: 16, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#img to png (for 127.0.0.1 at 2010-03-05 11:55:23) [GET]
+  Parameters: {"id"=>"favico"}
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (View: 1, DB: 0) | 406 Not Acceptable [http://localhost/generals/img/favico.png]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:55:25) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"06ZuxfE0JMm0C1yN9sz/BLrWw+YofScubxr6I5popvk=", "general"=>{"logotipo"=>"", "nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 34ms (View: 16, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#img to png (for 127.0.0.1 at 2010-03-05 11:55:26) [GET]
+  Parameters: {"id"=>"favico"}
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (View: 1, DB: 0) | 406 Not Acceptable [http://localhost/generals/img/favico.png]
+
+
+Processing PublicosController#index (for 127.0.0.1 at 2010-03-05 11:55:28) [GET]
+  [4;35;1mPublico Load (0.5ms)[0m   [0mSELECT * FROM "publicos" [0m
+Rendering template within layouts/publicos
+Rendering publicos/index
+Completed in 16ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:55:35) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:55:36) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"06ZuxfE0JMm0C1yN9sz/BLrWw+YofScubxr6I5popvk=", "general"=>{"logotipo"=>"", "nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 34ms (View: 16, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:56:22) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"06ZuxfE0JMm0C1yN9sz/BLrWw+YofScubxr6I5popvk=", "general"=>{"logotipo"=>"", "nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Rendered generals/_form (12.5ms)
+Completed in 52ms (View: 33, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#img to png (for 127.0.0.1 at 2010-03-05 11:56:22) [GET]
+  Parameters: {"id"=>"favico"}
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (View: 1, DB: 0) | 406 Not Acceptable [http://localhost/generals/img/favico.png]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:56:29) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"06ZuxfE0JMm0C1yN9sz/BLrWw+YofScubxr6I5popvk=", "general"=>{"photo"=>#<File:/var/folders/d8/d8-8vbGfHxOR-D-BVCla3U+++TM/-Tmp-/RackMultipart20100305-1415-glnz8q-0>, "nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Rendered generals/_form (11.1ms)
+Completed in 36ms (View: 17, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:56:46) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"06ZuxfE0JMm0C1yN9sz/BLrWw+YofScubxr6I5popvk=", "general"=>{"photo"=>#<File:/var/folders/d8/d8-8vbGfHxOR-D-BVCla3U+++TM/-Tmp-/RackMultipart20100305-1415-qkiaqx-0>, "nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Rendered generals/_form (11.6ms)
+Completed in 47ms (View: 28, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#img to png (for 127.0.0.1 at 2010-03-05 11:56:47) [GET]
+  Parameters: {"id"=>"favico"}
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (View: 1, DB: 0) | 406 Not Acceptable [http://localhost/generals/img/favico.png]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:56:49) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"06ZuxfE0JMm0C1yN9sz/BLrWw+YofScubxr6I5popvk=", "general"=>{"nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Rendered generals/_form (11.1ms)
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing PublicosController#index (for 127.0.0.1 at 2010-03-05 11:56:56) [GET]
+  [4;36;1mPublico Load (0.5ms)[0m   [0;1mSELECT * FROM "publicos" [0m
+Rendering template within layouts/publicos
+Rendering publicos/index
+Completed in 17ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:57:01) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+Rendered generals/_form (10.9ms)
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:57:03) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"E/XCRBvBwHBrNXf0nGAH+EV6WOWmz9zlQ3QBM9C+Itg=", "general"=>{"nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Rendered generals/_form (11.0ms)
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:57:04) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"E/XCRBvBwHBrNXf0nGAH+EV6WOWmz9zlQ3QBM9C+Itg=", "general"=>{"nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Rendered generals/_form (11.0ms)
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:57:43) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"E/XCRBvBwHBrNXf0nGAH+EV6WOWmz9zlQ3QBM9C+Itg=", "general"=>{"nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Rendered generals/_form (12.9ms)
+Completed in 48ms (View: 26, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing PublicosController#index (for 127.0.0.1 at 2010-03-05 11:57:50) [GET]
+  [4;35;1mPublico Load (0.5ms)[0m   [0mSELECT * FROM "publicos" [0m
+Rendering template within layouts/publicos
+Rendering publicos/index
+Completed in 16ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:57:53) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+Rendered generals/_form (11.8ms)
+Completed in 36ms (View: 18, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:58:34) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"E/XCRBvBwHBrNXf0nGAH+EV6WOWmz9zlQ3QBM9C+Itg=", "general"=>{"photo"=>#<File:/var/folders/d8/d8-8vbGfHxOR-D-BVCla3U+++TM/-Tmp-/RackMultipart20100305-1415-1p1g0kf-0>, "nombreIntegrante1"=>"yo", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>"Prueba"}}
+Rendering template within layouts/generals
+Rendering generals/new
+Rendered generals/_form (12.5ms)
+Completed in 43ms (View: 25, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:58:36) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"E/XCRBvBwHBrNXf0nGAH+EV6WOWmz9zlQ3QBM9C+Itg=", "general"=>{"nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Rendered generals/_form (11.0ms)
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:58:37) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"E/XCRBvBwHBrNXf0nGAH+EV6WOWmz9zlQ3QBM9C+Itg=", "general"=>{"nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Rendered generals/_form (11.0ms)
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 11:58:51) [GET]
+  Parameters: {"title"=>"Noticias sobre el mundo del mercado forex de Amero-fx"}
+
+ActionController::RoutingError (No route matches "/noticias/feed" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:59:32) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"06ZuxfE0JMm0C1yN9sz/BLrWw+YofScubxr6I5popvk=", "general"=>{"nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Rendered generals/_form (7.3ms)
+Completed in 43ms (View: 25, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#img to png (for 127.0.0.1 at 2010-03-05 11:59:33) [GET]
+  Parameters: {"id"=>"favico"}
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (View: 1, DB: 0) | 406 Not Acceptable [http://localhost/generals/img/favico.png]
+
+
+Processing GeneralsController#create (for 127.0.0.1 at 2010-03-05 11:59:35) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"06ZuxfE0JMm0C1yN9sz/BLrWw+YofScubxr6I5popvk=", "general"=>{"nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Rendered generals/_form (9.1ms)
+Completed in 48ms (View: 24, DB: 0) | 200 OK [http://localhost/generals]
+
+
+Processing GeneralsController#create (for 127.0.0.1 at 2010-03-05 11:59:46) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"06ZuxfE0JMm0C1yN9sz/BLrWw+YofScubxr6I5popvk=", "general"=>{"photo"=>#<File:/var/folders/d8/d8-8vbGfHxOR-D-BVCla3U+++TM/-Tmp-/RackMultipart20100305-1415-1fyngxd-0>, "nombreIntegrante1"=>"j", "nombreIntegrante2"=>"j", "nombreIntegrante3"=>"j", "nombreEmpresa"=>"Prueba"}}
+  [4;36;1mGeneral Create (0.6ms)[0m   [0;1mINSERT INTO "generals" ("nombreIntegrante1", "logotipo", "nombreIntegrante2", "created_at", "photo_file_size", "nombreEmpresa", "nombreIntegrante3", "updated_at", "photo_file_name", "photo_content_type", "photo_updated_at") VALUES('j', NULL, 'j', '2010-03-05 17:59:50', 157051, 'Prueba', 'j', '2010-03-05 17:59:50', 'DSC03596.JPG', 'image/jpeg', '2010-03-05 17:59:46')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/igmarin/Desktop/AlaridoRails/public/system/photos/22/medium/DSC03596.JPG
+[paperclip] saving /Users/igmarin/Desktop/AlaridoRails/public/system/photos/22/thumb/DSC03596.JPG
+[paperclip] saving /Users/igmarin/Desktop/AlaridoRails/public/system/photos/22/original/DSC03596.JPG
+Redirected to http://localhost:3000/generals/22
+Completed in 3985ms (DB: 1) | 302 Found [http://localhost/generals]
+
+
+Processing GeneralsController#show (for 127.0.0.1 at 2010-03-05 11:59:50) [GET]
+  Parameters: {"id"=>"22"}
+  [4;35;1mGeneral Load (0.9ms)[0m   [0mSELECT * FROM "generals" WHERE ("generals"."id" = 22) [0m
+Rendering template within layouts/generals
+Rendering generals/show
+Completed in 54ms (View: 29, DB: 1) | 200 OK [http://localhost/generals/22]
+
+
+Processing PublicosController#index (for 127.0.0.1 at 2010-03-05 12:00:07) [GET]
+  [4;36;1mPublico Load (0.6ms)[0m   [0;1mSELECT * FROM "publicos" [0m
+Rendering template within layouts/publicos
+Rendering publicos/index
+Completed in 121ms (View: 108, DB: 1) | 200 OK [http://localhost/publicos]

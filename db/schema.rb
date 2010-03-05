@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100305162503) do
+ActiveRecord::Schema.define(:version => 20100305172827) do
 
   create_table "estudiantes", :force => true do |t|
     t.string   "nombreUniversidad"
@@ -34,6 +34,10 @@ ActiveRecord::Schema.define(:version => 20100305162503) do
     t.string   "logotipo"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   create_table "logs", :force => true do |t|
