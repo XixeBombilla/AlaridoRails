@@ -13,22 +13,33 @@
   <tr style="color:#ffff00; ">
     <th>Nombreuniversidad</th>
     <th>Nombreestudiante1</th>
-    <th>Nombreestudiante2</th>
-    <th>Nombreesudiante3</th>
     <th>Matriculaestudiante1</th>
+    <th>Email1</th>
+
+    <th>Nombreestudiante2</th>
     <th>Matriculaestudiante2</th>
+    <th>Email2</th>
+
+    <th>Nombreesudiante3</th>
     <th>Matriculaestudiante3</th>
+    <th>Email3</th>
   </tr>
 
 <% @estudiantes.each do |estudiante| %>
   <tr style="color:white; ">
     <td><%=h estudiante.nombreUniversidad %></td>
+
     <td><%=h estudiante.nombreEstudiante1 %></td>
-    <td><%=h estudiante.nombreEstudiante2 %></td>
-    <td><%=h estudiante.nombreEsudiante3 %></td>
     <td><%=h estudiante.matriculaEstudiante1 %></td>
+    <td><%=h estudiante.email1 %></td>
+
+    <td><%=h estudiante.nombreEstudiante2 %></td>
     <td><%=h estudiante.matriculaEstudiante2 %></td>
+    <td><%=h estudiante.email2 %></td>
+
+    <td><%=h estudiante.nombreEsudiante3 %></td>
     <td><%=h estudiante.matriculaEstudiante3 %></td>
+    <td><%=h estudiante.email3 %></td>
     <td><%= link_to 'Mostrar', estudiante %></td>
     <td><%= link_to 'Editar', edit_estudiante_path(estudiante) %></td>
     <td><%= link_to 'Eliminar', estudiante, :confirm => 'Seguro?', :method => :delete %></td>

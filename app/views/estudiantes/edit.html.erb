@@ -12,29 +12,8 @@
 <% form_for(@estudiante) do |f| %>
   <%= f.error_messages %>
 
-  <p style="color:white;">
-    <%= f.label :Nombre_de_la_Universidad %><br />
-    <%= f.text_field :nombreUniversidad %>
-  </p>
-  <p style="color:white;">
-    <%= f.label :Nombre_del_Estudiante_1 %><br />
-    <%= f.text_field :nombreEstudiante1 %><br />
-        <%= f.label :Matricula_del_Estudiante_1 %><br />
-    <%= f.text_field :matriculaEstudiante1 %>
-  </p>
-  <p style="color:white;">
-    <%= f.label :Nombre_del_Estudiante_2 %><br />
-    <%= f.text_field :nombreEstudiante2 %><br />
-     <%= f.label :Matricula_del_Estudiante_2 %><br />
-    <%= f.text_field :matriculaEstudiante2 %>
-  </p>
-  <p style="color:white;">
-    <%= f.label :Nombre_del_Esudiante_3 %><br />
-    <%= f.text_field :nombreEsudiante3 %><br />
-    <%= f.label :Matricula_del_Estudiante_3 %><br />
-    <%= f.text_field :matriculaEstudiante3 %>
-  </p>
- 
+<%= rende :partial => "form", :locals => {:f => f}  %>
+
   <p>
     <%= f.submit '', {:id => "boton_actualizar"} %>
   </p>
