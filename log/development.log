@@ -5592,3 +5592,38 @@ ActionController::RoutingError (No route matches "/noticias/feed" with {:method=
   /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-03-05 10:34:01) [GET]
+Redirected to http://localhost:3000/
+Completed in 18ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing PublicosController#index (for 127.0.0.1 at 2010-03-05 10:34:01) [GET]
+  [4;36;1mPublico Load (0.5ms)[0m   [0;1mSELECT * FROM "publicos" [0m
+Rendering template within layouts/publicos
+Rendering publicos/index
+Completed in 43ms (View: 30, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-03-05 10:35:08) [GET]
+Rendering sessions/new
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 10:35:26) [GET]
+  Parameters: {"title"=>"Noticias sobre el mundo del mercado forex de Amero-fx"}
+
+ActionController::RoutingError (No route matches "/noticias/feed" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)

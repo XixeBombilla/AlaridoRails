@@ -11,7 +11,9 @@
 
 
 <% form_for(@general) do |f| %>
+<p style="color:white;">
 <%= f.error_messages :header_message => "Por favor intente nuevamente", :message => "Existen los siguientes errores en los campos de:" %>
+</p>
 
   <p style="color:white;">
     <%= f.label :Nombre_Empresa %><br />
