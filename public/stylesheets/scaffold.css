@@ -1,0 +1,303 @@
+body{    
+    background-image: url(../img/back.png) ;
+    font-family: sans-serif;
+   overflow:auto;
+    overflow-y:auto;
+}
+
+a:link {
+  
+  color:#FFF;
+  text-decoration: none;
+  border: none;
+
+  
+}
+
+
+
+a:visited{
+  color:#191919;
+}
+
+
+#imgIzq{
+    
+background-color:#000000;
+float:left;
+height:100%;
+left:0;
+position:fixed;
+top:0;
+width:220px;
+-moz-box-shadow: 0 0 4em black;
+-webkit-box-shadow: 0 0 4em black;
+z-index:2;
+
+}
+
+#imgLink{
+    
+float:right;
+right:10px;
+position:fixed;
+top:10px;
+width:180px;
+z-index:3;
+
+}
+
+#content{
+
+margin-left:22px;
+position:relative;
+top:0px;
+width:4720px;
+z-index:1;
+}
+
+#info0{
+    position: relative;
+    float:left;
+    overflow:hidden;  
+    width:1400px;
+
+}
+#info1{
+    
+    font-family: helvetica;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    width:572px;
+    float:left;
+    overflow:hidden;
+    
+  
+}
+
+#info2{
+    
+    font-family: helvetica;
+    margin-left:-255px;
+    color: #333;
+    position: relative;
+    float:left;
+    width:472px;
+    overflow:hidden;
+  
+}
+
+#info3{
+    
+    font-family: helvetica;
+    margin-left:-80px;
+    color: #333;
+    position: relative;
+    float:left;
+    width:472px;
+    overflow:hidden;
+  
+}
+
+#info4{
+    
+    font-family: helvetica;
+    margin-left:-190px;
+    color: #333;
+    position: relative;
+    float:left;
+    width:410px;
+    overflow:hidden;
+  
+}
+
+#info5{
+    
+    font-family: helvetica;
+    margin-left:-160px;
+    color: #333;
+    position: relative;
+    float:left;
+    width:470px;
+    overflow:hidden;
+  
+}
+
+#info6{
+    
+    font-family: helvetica;
+    margin-left:40px;
+    color: #333;
+    position: relative;
+    float:left;
+    width:250px;
+    overflow:hidden;
+  
+}
+
+#info7{
+    
+    font-family: helvetica;
+    margin-left:40px;
+    color: #333;
+    position: relative;
+    float:left;
+    width:300px;
+    overflow:hidden;
+  
+}
+
+#info8{
+    
+    font-family: helvetica;
+    margin-left:40px;
+    color: #333;
+    position: relative;
+    float:left;
+    width:300px;
+    overflow:hidden;
+  
+}
+
+#info9{
+    
+    font-family: helvetica;
+    margin-left:40px;
+    color: #333;
+    position: relative;
+    float:left;
+    width:570px;
+    overflow:hidden;
+  
+}
+
+#boton_re {
+    display:block;
+	background-image: url(../img/re.png);
+	height:30px;
+	width:220px;
+}
+#boton_re:hover {
+    background-image: url(../img/re_h.png);
+}
+
+#boton_rg {
+    display:block;
+	background-image: url(../img/rg.png);
+	height:30px;
+	width:189px;
+}
+#boton_rg:hover {
+    background-image: url(../img/rg_h.png);
+}
+
+#boton_editar {
+    display:block;
+	background-image: url(../img/e.png);
+	height:30px;
+	width:95px;
+}
+#boton_editar:hover {
+    background-image: url(../img/e_h.png);
+}
+
+#boton_donar {
+    display:block;
+	background-image: url(../img/dona.png);
+	height:30px;
+	width:101px;
+}
+#boton_donar:hover {
+    background-image: url(../img/dona_h.png);
+}
+
+#boton_registro {
+    display:block;
+	background-image: url(../img/r.png);
+	height:30px;
+	width:101px;
+}
+#boton_registro:hover {
+    background-image: url(../img/r_h.png);
+}
+
+#boton_aceptar {
+    display:block;
+	background-image: url(../img/a_h.png);
+	height:30px;
+	width:113px;
+}
+#boton_aceptar:hover {
+    background-image: url(../img/a.png);
+}
+
+#boton_crear {
+    display:block;
+	background-image: url(../img/cre_h.png);
+	height:35px;
+	width:93px;
+}
+#boton_crear:hover {
+    background-image: url(../img/cre.png);
+}
+
+#boton_actualizar {
+    display:block;
+	background-image: url(../img/ac.png);
+	height:35px;
+	width:130px;
+}
+#boton_actualizar:hover {
+    background-image: url(../img/ac_h.png);
+}
+
+#donativo { 
+     
+  
+    display: none;
+    z-index:6;
+    background-color: #000;
+    width:200px;     
+    height:325px;
+    float:right;
+        
+} 
+
+.details1 { 
+    position:absolute;
+    margin-left:20px;
+    font-size:11px; 
+    color:#fff; 
+    width:150px;
+    float:right;
+
+} 
+
+#registro { 
+     
+  
+    display: none;
+    z-index:5;
+    background-color: #333;
+    width:675px;     
+    height:250px;
+    margin-top:275px;
+        
+} 
+ 
+/* close button positioned on upper right corner */ 
+.details { 
+    position:absolute; 
+    left:15px; 
+    font-size:11px; 
+    color:#fff; 
+    width:450px;
+    margin-top:25px;
+} 
+ 
+.details h3 { 
+    color:#ffff00; 
+    font-size:15px; 
+    margin:0 0 -10px 0; 
+}

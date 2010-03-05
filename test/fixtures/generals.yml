@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombreEmpresa: MyString
+  nombreIntegrante1: MyString
+  nombreIntegrante2: MyString
+  nombreIntegrante3: MyString
+  logotipo: MyString
+
+two:
+  nombreEmpresa: MyString
+  nombreIntegrante1: MyString
+  nombreIntegrante2: MyString
+  nombreIntegrante3: MyString
+  logotipo: MyString

@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombreUniversidad: MyString
+  nombreEstudiante1: MyString
+  nombreEstudiante2: MyString
+  nombreEsudiante3: MyString
+  matriculaEstudiante1: MyString
+  matriculaEstudiante2: MyString
+  matriculaEstudiante3: MyString
+
+two:
+  nombreUniversidad: MyString
+  nombreEstudiante1: MyString
+  nombreEstudiante2: MyString
+  nombreEsudiante3: MyString
+  matriculaEstudiante1: MyString
+  matriculaEstudiante2: MyString
+  matriculaEstudiante3: MyString

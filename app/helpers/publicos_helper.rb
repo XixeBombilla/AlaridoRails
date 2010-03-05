@@ -1,0 +1,2 @@
+module PublicosHelper
+end

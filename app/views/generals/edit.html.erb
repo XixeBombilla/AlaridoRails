@@ -1,0 +1,40 @@
+<div id="imgIzq">
+        
+        <img src="../../img/logo.jpg" style="margin-left:17px; "/>
+        <img src="../../img/o.png" style="margin-left:20px; margin-top:95%;"/>
+       
+	
+    </div>
+
+<div id="content" style="left:300px; background-color:#000; padding:10px; width:500px;">
+          <h1 style=" color:#ffff00; ">Editar Datos</h1>
+
+
+<% form_for(@general) do |f| %>
+  <%= f.error_messages %>
+
+  <p style="color:white;">
+    <%= f.label :Nombre_Empresa %><br />
+    <%= f.text_field :nombreEmpresa %>
+  </p>
+  <p style="color:white;">
+    <%= f.label :Nombre_Integrante_1 %><br />
+    <%= f.text_field :nombreIntegrante1 %>
+  </p>
+  <p style="color:white;">
+    <%= f.label :Nombre_Integrante_2 %><br />
+    <%= f.text_field :nombreIntegrante2 %>
+  </p>
+  <p style="color:white;">
+    <%= f.label :Nombre_Integrante_3 %><br />
+    <%= f.text_field :nombreIntegrante3 %>
+  </p>
+  <p style="color:white;">
+    <%= f.label :logotipo %><br />
+    <%= f.text_field :logotipo %>
+  </p>
+  <p>
+    <%= f.submit '', {:id => "boton_actualizar"} %>
+  </p>
+<% end %>
+
