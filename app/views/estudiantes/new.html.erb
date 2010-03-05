@@ -10,9 +10,7 @@
 <h1 style=" color:#ffff00; ">Registro de Estudiantes</h1>
 
 <% form_for(@estudiante) do |f| %>
-<p style="color:white;">
-<%= f.error_messages :header_message => "Por favor intente nuevamente", :message => "Existen los siguientes errores en los campos de:" %>
-</p>
+<%= f.error_messages :header_message => "Por favor intente nuevamente", :message => "Existen los siguientes errores en los campos de:", :style => "color:white" %>
 
 <%= render :partial => "form", :locals => {:f => f}  %>
  
