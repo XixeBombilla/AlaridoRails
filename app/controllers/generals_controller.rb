@@ -1,7 +1,7 @@
 class GeneralsController < ApplicationController
   # GET /generals
   # GET /generals.xml
-  before_filter :login_required, :except =>[:show, :new, :edit, :create, :update ]
+  before_filter :login_required, :except =>[:show, :new, :edit, :create, :update]
   
   def index
     @generals = General.all

@@ -5735,3 +5735,282 @@ ActionController::RoutingError (No route matches "/noticias/feed" with {:method=
   /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 10:45:26) [GET]
+  Parameters: {"title"=>"Noticias sobre el mundo del mercado forex de Amero-fx"}
+
+ActionController::RoutingError (No route matches "/noticias/feed" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 10:50:26) [GET]
+  Parameters: {"title"=>"Noticias sobre el mundo del mercado forex de Amero-fx"}
+
+ActionController::RoutingError (No route matches "/noticias/feed" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 10:55:26) [GET]
+  Parameters: {"title"=>"Noticias sobre el mundo del mercado forex de Amero-fx"}
+
+ActionController::RoutingError (No route matches "/noticias/feed" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 11:07:59) [GET]
+  Parameters: {"title"=>"Noticias sobre el mundo del mercado forex de Amero-fx"}
+
+ActionController::RoutingError (No route matches "/noticias/feed" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PublicosController#index (for 127.0.0.1 at 2010-03-05 11:12:30) [GET]
+  [4;36;1mPublico Load (0.5ms)[0m   [0;1mSELECT * FROM "publicos" [0m
+Rendering template within layouts/publicos
+Rendering publicos/index
+Completed in 16ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:12:39) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 41ms (View: 26, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#create (for 127.0.0.1 at 2010-03-05 11:12:40) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"E/XCRBvBwHBrNXf0nGAH+EV6WOWmz9zlQ3QBM9C+Itg=", "general"=>{"logotipo"=>"", "nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+  [4;35;1mGeneral Create (0.4ms)[0m   [0mINSERT INTO "generals" ("nombreIntegrante1", "logotipo", "nombreIntegrante2", "created_at", "nombreEmpresa", "nombreIntegrante3", "updated_at") VALUES('', '', '', '2010-03-05 17:12:40', '', '', '2010-03-05 17:12:40')[0m
+Redirected to http://localhost:3000/generals/20
+Completed in 24ms (DB: 0) | 302 Found [http://localhost/generals]
+
+
+Processing GeneralsController#show (for 127.0.0.1 at 2010-03-05 11:12:40) [GET]
+  Parameters: {"id"=>"20"}
+  [4;36;1mGeneral Load (0.6ms)[0m   [0;1mSELECT * FROM "generals" WHERE ("generals"."id" = 20) [0m
+Rendering template within layouts/generals
+Rendering generals/show
+Completed in 24ms (View: 7, DB: 1) | 200 OK [http://localhost/generals/20]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 11:12:59) [GET]
+  Parameters: {"title"=>"Noticias sobre el mundo del mercado forex de Amero-fx"}
+
+ActionController::RoutingError (No route matches "/noticias/feed" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PublicosController#index (for 127.0.0.1 at 2010-03-05 11:14:06) [GET]
+  [4;35;1mPublico Load (0.5ms)[0m   [0mSELECT * FROM "publicos" [0m
+Rendering template within layouts/publicos
+Rendering publicos/index
+Completed in 16ms (View: 3, DB: 1) | 200 OK [http://localhost/publicos]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:14:12) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 30ms (View: 15, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#create (for 127.0.0.1 at 2010-03-05 11:14:13) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"E/XCRBvBwHBrNXf0nGAH+EV6WOWmz9zlQ3QBM9C+Itg=", "general"=>{"logotipo"=>"", "nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+  [4;36;1mGeneral Create (0.5ms)[0m   [0;1mINSERT INTO "generals" ("nombreIntegrante1", "logotipo", "nombreIntegrante2", "created_at", "nombreEmpresa", "nombreIntegrante3", "updated_at") VALUES('', '', '', '2010-03-05 17:14:13', '', '', '2010-03-05 17:14:13')[0m
+Redirected to http://localhost:3000/generals/21
+Completed in 24ms (DB: 0) | 302 Found [http://localhost/generals]
+
+
+Processing GeneralsController#show (for 127.0.0.1 at 2010-03-05 11:14:13) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mGeneral Load (0.6ms)[0m   [0mSELECT * FROM "generals" WHERE ("generals"."id" = 21) [0m
+Rendering template within layouts/generals
+Rendering generals/show
+Completed in 23ms (View: 7, DB: 1) | 200 OK [http://localhost/generals/21]
+
+
+Processing PublicosController#index (for 127.0.0.1 at 2010-03-05 11:14:23) [GET]
+  [4;36;1mPublico Load (0.5ms)[0m   [0;1mSELECT * FROM "publicos" [0m
+Rendering template within layouts/publicos
+Rendering publicos/index
+Completed in 16ms (View: 3, DB: 1) | 200 OK [http://localhost/publicos]
+
+
+Processing PublicosController#index (for 127.0.0.1 at 2010-03-05 11:15:01) [GET]
+  [4;35;1mPublico Load (0.5ms)[0m   [0mSELECT * FROM "publicos" [0m
+Rendering template within layouts/publicos
+Rendering publicos/index
+Completed in 16ms (View: 3, DB: 1) | 200 OK [http://localhost/publicos]
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:15:42) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#create (for 127.0.0.1 at 2010-03-05 11:15:43) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"E/XCRBvBwHBrNXf0nGAH+EV6WOWmz9zlQ3QBM9C+Itg=", "general"=>{"logotipo"=>"", "nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 43ms (View: 24, DB: 0) | 200 OK [http://localhost/generals]
+
+
+Processing GeneralsController#create (for 127.0.0.1 at 2010-03-05 11:17:12) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"E/XCRBvBwHBrNXf0nGAH+EV6WOWmz9zlQ3QBM9C+Itg=", "general"=>{"logotipo"=>"", "nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 51ms (View: 27, DB: 0) | 200 OK [http://localhost/generals]
+
+
+Processing PublicosController#index (for 127.0.0.1 at 2010-03-05 11:17:29) [GET]
+  [4;36;1mPublico Load (0.5ms)[0m   [0;1mSELECT * FROM "publicos" [0m
+Rendering template within layouts/publicos
+Rendering publicos/index
+Completed in 18ms (View: 3, DB: 1) | 200 OK [http://localhost/publicos]
+
+
+Processing PublicosController#index (for 127.0.0.1 at 2010-03-05 11:17:49) [GET]
+  [4;35;1mPublico Load (0.5ms)[0m   [0mSELECT * FROM "publicos" [0m
+Rendering template within layouts/publicos
+Rendering publicos/index
+Completed in 17ms (View: 3, DB: 1) | 200 OK [http://localhost/publicos]
+
+
+Processing EstudiantesController#new (for 127.0.0.1 at 2010-03-05 11:17:52) [GET]
+Rendering template within layouts/estudiantes
+Rendering estudiantes/new
+Rendered estudiantes/_form (18.6ms)
+Completed in 60ms (View: 44, DB: 0) | 200 OK [http://localhost/estudiantes/new]
+
+
+Processing EstudiantesController#create (for 127.0.0.1 at 2010-03-05 11:17:53) [POST]
+  Parameters: {"estudiante"=>{"nombreEstudiante1"=>"", "nombreEstudiante2"=>"", "matriculaEstudiante1"=>"", "matriculaEstudiante2"=>"", "matriculaEstudiante3"=>"", "email1"=>"", "email2"=>"", "email3"=>"", "nombreEsudiante3"=>"", "nombreUniversidad"=>""}, "commit"=>"", "authenticity_token"=>"E/XCRBvBwHBrNXf0nGAH+EV6WOWmz9zlQ3QBM9C+Itg="}
+Rendering template within layouts/estudiantes
+Rendering estudiantes/new
+Rendered estudiantes/_form (19.5ms)
+Completed in 62ms (View: 39, DB: 0) | 200 OK [http://localhost/estudiantes]
+
+
+Processing EstudiantesController#img to png (for 127.0.0.1 at 2010-03-05 11:17:55) [GET]
+  Parameters: {"id"=>"favico"}
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (View: 1, DB: 0) | 406 Not Acceptable [http://localhost/estudiantes/img/favico.png]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 11:17:59) [GET]
+  Parameters: {"title"=>"Noticias sobre el mundo del mercado forex de Amero-fx"}
+
+ActionController::RoutingError (No route matches "/noticias/feed" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EstudiantesController#create (for 127.0.0.1 at 2010-03-05 11:19:09) [POST]
+  Parameters: {"estudiante"=>{"nombreEstudiante1"=>"", "nombreEstudiante2"=>"", "matriculaEstudiante1"=>"", "matriculaEstudiante2"=>"", "matriculaEstudiante3"=>"", "email1"=>"", "email2"=>"", "email3"=>"", "nombreEsudiante3"=>"", "nombreUniversidad"=>""}, "commit"=>"", "authenticity_token"=>"E/XCRBvBwHBrNXf0nGAH+EV6WOWmz9zlQ3QBM9C+Itg="}
+Rendering template within layouts/estudiantes
+Rendering estudiantes/new
+Rendered estudiantes/_form (22.2ms)
+Completed in 172ms (View: 147, DB: 0) | 200 OK [http://localhost/estudiantes]
+
+
+Processing EstudiantesController#new (for 127.0.0.1 at 2010-03-05 11:19:15) [GET]
+Rendering template within layouts/estudiantes
+Rendering estudiantes/new
+Rendered estudiantes/_form (16.3ms)
+Completed in 43ms (View: 27, DB: 0) | 200 OK [http://localhost/estudiantes/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 11:22:59) [GET]
+  Parameters: {"title"=>"Noticias sobre el mundo del mercado forex de Amero-fx"}
+
+ActionController::RoutingError (No route matches "/noticias/feed" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GeneralsController#new (for 127.0.0.1 at 2010-03-05 11:24:03) [GET]
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 36ms (View: 21, DB: 0) | 200 OK [http://localhost/generals/new]
+
+
+Processing GeneralsController#create (for 127.0.0.1 at 2010-03-05 11:24:05) [POST]
+  Parameters: {"commit"=>"", "authenticity_token"=>"E/XCRBvBwHBrNXf0nGAH+EV6WOWmz9zlQ3QBM9C+Itg=", "general"=>{"logotipo"=>"", "nombreIntegrante1"=>"", "nombreIntegrante2"=>"", "nombreIntegrante3"=>"", "nombreEmpresa"=>""}}
+Rendering template within layouts/generals
+Rendering generals/new
+Completed in 43ms (View: 23, DB: 0) | 200 OK [http://localhost/generals]

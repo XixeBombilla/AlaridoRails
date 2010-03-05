@@ -3,6 +3,7 @@ body{
     font-family: sans-serif;
    overflow:auto;
     overflow-y:auto;
+color:white;
 }
 
 a:link {
@@ -300,4 +301,8 @@ z-index:1;
     color:#ffff00; 
     font-size:15px; 
     margin:0 0 -10px 0; 
+}
+
+.errorExplanation{
+	color:white;
 }
