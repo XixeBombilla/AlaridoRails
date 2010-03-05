@@ -5709,3 +5709,29 @@ ActionController::RoutingError (No route matches "/generals/19/img/favico.png" w
   /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing GeneralsController#edit (for 127.0.0.1 at 2010-03-05 10:39:48) [GET]
+  Parameters: {"id"=>"19"}
+  [4;35;1mGeneral Load (0.7ms)[0m   [0mSELECT * FROM "generals" WHERE ("generals"."id" = 19) [0m
+Rendering template within layouts/generals
+Rendering generals/edit
+Completed in 42ms (View: 26, DB: 1) | 200 OK [http://localhost/generals/19/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 10:40:26) [GET]
+  Parameters: {"title"=>"Noticias sobre el mundo del mercado forex de Amero-fx"}
+
+ActionController::RoutingError (No route matches "/noticias/feed" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
