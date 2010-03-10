@@ -1,0 +1,33 @@
+<div id="imgIzq">
+        
+        <img src="img/logo.jpg" style="margin-left:17px; "/>
+        <img src="img/o.png" style="margin-left:20px; margin-top:95%;"/>
+       
+	
+    </div>
+
+<div id="content" style="left:300px; background-color:#000; padding:10px; width:800px;">
+          <h1 style=" color:#ffff00; ">Lista de Empresas</h1>
+
+            <table border=1 style="font-size:10pt;">
+              <tr  style="color:#ffff00; ">
+                <th>Nombreempresa</th>
+                <th>Logotipo</th>
+                <th>Mensaje</th>
+              </tr>
+            
+            <% @empresas.each do |empresa| %>
+              <tr>
+                <td><%=h empresa.nombreEmpresa %></td>
+                <td><%=h empresa.logotipo %></td>
+                <td><%=h empresa.mensaje %></td>
+                <td><%= link_to 'Show', empresa %></td>
+                <td><%= link_to 'Edit', edit_empresa_path(empresa) %></td>
+                <td><%= link_to 'Destroy', empresa, :confirm => 'Are you sure?', :method => :delete %></td>
+              </tr>
+            <% end %>
+            </table>
+            
+            <br />
+           
+</div>

@@ -9,7 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100305172827) do
+ActiveRecord::Schema.define(:version => 20100310220943) do
+
+  create_table "empresas", :force => true do |t|
+    t.string   "nombreEmpresa"
+    t.string   "logotipo"
+    t.string   "mensaje"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "estudiantes", :force => true do |t|
     t.string   "nombreUniversidad"

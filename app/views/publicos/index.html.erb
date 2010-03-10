@@ -1,11 +1,11 @@
 <div id="imgIzq">
         
         <img src="img/logo.jpg" style="margin-left:17px; "/>
-        <img src="img/o.png" style="margin-left:20px; margin-top:80%;"/>
+        <img src="img/o.png" style="margin-left:20px; margin-top:60%;  bottom:5px;"/>
        
-	<img src="img/logo_liveroom.png" width="87px" height="30px" style="margin-left:20px;" />
-       <img src="img/logo_visual.png" width="80px" height="35px" style="margin-left:5px;" />
-        <a href="http://www.daixe.com.mx/" target="_blank" ><img src="img/logo_daixe.png" width="100px" height="45px" style="margin-left:50px; border:none;" /></a>
+	<img src="img/logo_liveroom.png" width="87px" height="30px" style="margin-left:20px; bottom:5px;" />
+       <img src="img/logo_visual.png" width="80px" height="35px" style="margin-left:5px;  bottom:5px;" />
+        <a href="http://www.daixe.com.mx/" target="_blank" ><img src="img/logo_daixe.png" width="100px" height="45px" style="margin-left:50px; border:none; float:bottom;" /></a>
     
     </div>
     
@@ -36,31 +36,12 @@
                Arma tu equipo de 3 personas.<br/>
                 Inscr&iacute;bete aqu&iacute; antes del 16 de Abril<br/>
                 del 2010<br/>
-                Estudiantes: $350.00 MXN<br/>
-                General: $700.00 MXN<br/>
+                Estudiantes: $350.00 MXN por equipo.<br/>
+                General: $700.00 MXN por equipo.<br/>
                 
             </p>
            
-            <img id="boton_registro" style="float:right; margin-top:-17px; cursor:pointer;" />
             
-            <div id="registro"> 
-                
-                   <div class="details"> 
-                       <h3 style="font-size:16pt;">Registro de Participantes</h3> 
-                
-                       <h4>Alarido SMC</h4> 
-                
-                       <p>
-					<p  style="font-size:11pt;">Inscripci&oacute;n a Alarido Social Media Contest (General) : $700.</p>
-					<p><%= link_to '', new_general_path, {:id => "boton_rg"} %></p>
-
-					<p  style="font-size:11pt;">Inscripci&oacute;n a Alarido Social Media Contest (Estudiante) : $350.</p>
-                                        <p><%= link_to '', new_estudiante_path, {:id => "boton_re"} %></p>
-
-		      </p>
-                   </div> 
-                
-            </div> 
             
         </div>
         <div id="info3">
@@ -211,6 +192,12 @@
         <div class="clear"></div>
     </div>
     
+	<div id="imgBajo">
+		
+		<img  src="img/flecha.png"  width="50px" height="50px" />
+		
+	</div>	
+    
     <div id="imgLink">
         
         <a href=" http://www.flickr.com/photos/alarido/" target="_blank"><img src="img/flickr.png" style="float:right; margin-left:5px;  border:none;" width=25px; height=25px; /></a>
@@ -220,27 +207,60 @@
         <a href="http://www.facebook.com/alaridosmc" target="_blank"><img src="img/facebook.png" style=" float:right; margin-left:5px; border: none; " width=25px; height=25px;/></a>
        <img id="boton_donar" style="float:right; cursor:pointer;" />
         
-        <div id="donativo"> 
+        
+	<img id="boton_registro" style="float:right;" />
+	    
+	  <img id="boton_info" style="float:right;" />
+            
+            <div id="informacion"> 
+                
+                   <div class="details2">
+			
+			<a href="infoAlarido.pdf" id="boton_pdf" style="margin-top:10px;"></a> 
+                    
+                   </div> 
+                
+            </div>
+	   
+            <div id="registro"> 
+                
+                   <div class="details"> 
+                       <h3 style="font-size:16pt;">Registro de Participantes</h3> 
+                
+                       <h4>Alarido SMC</h4> 
+                
+                       <p>
+					<p  style="font-size:11pt;">Inscripci&oacute;n a Alarido Social Media Contest (General) :<br/> $700 p/e.</p>
+					<p><%= link_to '', new_general_path, {:id => "boton_rg"} %></p>
+
+					<p  style="font-size:11pt;">Inscripci&oacute;n a Alarido Social Media Contest (Estudiante) :<br/> $350 p/e.</p>
+                                        <p><%= link_to '', new_estudiante_path, {:id => "boton_re"} %></p>
+
+		      </p>
+                   </div> 
+                
+            </div>    
+	    <div id="donativo"> 
                 
                    <div class="details1"> 
-                       <h3 style="font-size:16pt;">Donativos:</h3> 
+                       <h3 style="font-size:16pt; margin-top:20px;">Donativos:</h3> 
                 
                        <h4>Alarido SMC</h4> 
                 
                        <p>
 				      
-					<p  style="font-size:10pt;">Apoyo para la bolsa de premios del Alarido SMC.<a style="color: #FFF;">(Donativo)</a></p>
-
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="VRJRUWLTCRV88">
-					<input type="image" src="https://www.paypal.com/es_XC/i/btn/btn_xpressCheckout.gif" border="0" name="submit" alt="PayPal. La forma r‡pida y segura de pagar en Internet.">
-					<img alt="" border="0" src="https://www.paypal.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-					</form>
+				
+				
+				
+				<p><%= link_to '', {:controller=>'publicos', :action=>'empresas'}, {:id => "boton_em"} %></p>
+				<p><%= link_to '', new_empresa_path, {:id => "boton_qe"} %></p>
+		   
+			
+			
                                         
                                         <p  style="font-size:8pt; text-align:justify;">Necesitamos verificar tu pago para poder mostrar la informaci&oacute;n de tu empresa, esto puede tardar algunas horas....</p>
 	      		</p> 
                    </div>
                 
-            </div> 
+            </div>
     </div>
